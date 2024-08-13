@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial;
+}
+
+.main-nav {
+    background-color: #ffffff;
+    height: 50px;
+    font-size:  20px;
+    margin: 30px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+    color: #ff5a5f;
+}
+
+.secondary-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.secondary-nav ul li {
+    margin-right: 20px;
+}
+
+.secondary-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.secondary-nav ul li a:hover,
+.secondary-nav ul li a:focus {
+    color: #ff5a5f
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.consult-button {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.consult-button:hover,
+.consult-button:focus {
+    background-color: #ff5a5f;
+}
+
+.user-icon {
+    height: 10px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.main-nav ul li a::after,
+.secondary-nav ul li a::after {
+    content: '▾';
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.main-nav ul li.active a {
+    color: #ff5a5f;
+}
+
+.main-nav ul li.active a::after {
+    border-bottom: 2px solid #ff5a5f;
+}
